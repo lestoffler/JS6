@@ -37,5 +37,7 @@ input, p {
 	width: 50%;
 	margin:  10px auto;
 }
-
+.new-info {
+	display: none;
+}
 
