@@ -4,18 +4,17 @@ $(document).on('ready', function(){
 		var edit = $('.new-info');
 		edit.toggleClass('active');
 		if(edit.hasClass('active')){
-			$('.toggleButton').text('Hide Form');
+			$('.toggle-button').text('Hide Form');
+				$('.new-info').removeClass
 		} else {
 			$('.toggleButton').text('Show Form');
 		}
 	};
 
 
-	$('.toggleButton').on('click', function(){
-		clickToEdit();
-	});
+	$('.toggleButton').on('click', clickToEdit);
 
-	$('.user-input').on('submit', function(event) {
+	$('.user-info').on('submit', function(event) {
 		event.preventDefault();
 
 		$('.user-name').text($('#name').val());
